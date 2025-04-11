@@ -19,5 +19,7 @@ typedef struct {
 void add_treasure(const char* treasure_hunt_id);
 void list_treasure_hunt(const char* treasure_hunt_id);
 void view_treasure(const char* treasure_hunt_id, const char* treasure_id);
+void remove_treasure(const char* treasure_hunt_id, const char* treasure_id);
+void remove_treasure_hunt(const char* treasure_hunt_id);
 
 #endif
