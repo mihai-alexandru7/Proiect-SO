@@ -5,10 +5,9 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <errno.h>
-#include "treasure.h"
-#include "treasure_utils.h"
+#include "../../../include/treasure.h"
+#include "../utils/treasure_utils.h"
 
-// Add a treasure to a hunt
 void add_treasure(const char* hunt_id) {
   // Create the hunts directory if it doesn't exist
   if (!directory_exists(HUNTS_DIRECTORY)) {

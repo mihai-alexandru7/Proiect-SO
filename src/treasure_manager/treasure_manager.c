@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "treasure.h"
-#include "treasure_operations.h"
+#include "../../include/treasure.h"
+#include "../../include/treasure_operations.h"
 
 // Print usage instructions
 void print_usage(const char* program_name) {
   printf("Usage:\n");
-  printf("'%s --add <hunt_id>' to add a new treasure (prompts for details)\n", program_name);
+  printf("'%s --add_treasure <hunt_id>' to add a new treasure (prompts for details)\n", program_name);
   printf("'%s --view_treasure <hunt_id> <treasure_id>' to view details of a specific treasure\n", program_name);
   printf("'%s --list_treasures <hunt_id>' to list all treasures in a hunt\n", program_name);
   printf("'%s --list_hunts' to list all available hunts\n", program_name);

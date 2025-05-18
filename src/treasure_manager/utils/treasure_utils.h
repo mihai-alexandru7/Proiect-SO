@@ -1,7 +1,7 @@
 #ifndef TREASURE_UTILS_H
 #define TREASURE_UTILS_H
 
-#include "treasure.h"
+#include "../../../include/treasure.h"
 
 #define MAX_PATH_SIZE 512
 #define MAX_LOG_MESSAGE_LENGTH 256

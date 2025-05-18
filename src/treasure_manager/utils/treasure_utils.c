@@ -6,7 +6,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
-#include "treasure.h"
+#include "../../../include/treasure.h"
 #include "treasure_utils.h"
 
 // Reads treasure information from the standard input

@@ -5,10 +5,9 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
-#include "treasure.h"
-#include "treasure_utils.h"
+#include "../../../include/treasure.h"
+#include "../utils/treasure_utils.h"
 
-// Remove a hunt
 void remove_hunt(const char* hunt_id) {
   // Check if the hunts directory exists
   if (!directory_exists(HUNTS_DIRECTORY)) {

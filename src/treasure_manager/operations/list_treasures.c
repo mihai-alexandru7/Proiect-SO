@@ -6,10 +6,9 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
-#include "treasure.h"
-#include "treasure_utils.h"
+#include "../../../include/treasure.h"
+#include "../utils/treasure_utils.h"
 
-// List all treasures in a hunt
 void list_treasures(const char* hunt_id) {
   // Check if the hunts directory exists
   if (!directory_exists(HUNTS_DIRECTORY)) {

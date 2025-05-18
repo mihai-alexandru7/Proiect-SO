@@ -7,10 +7,9 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <errno.h>
-#include "treasure.h"
-#include "treasure_utils.h"
+#include "../../../include/treasure.h"
+#include "../utils/treasure_utils.h"
 
-// List all the hunts
 void list_hunts() {
   // Check if the hunts directory exists
   if (!directory_exists(HUNTS_DIRECTORY)) {
@@ -37,7 +36,7 @@ void list_hunts() {
     // Check if the entry it's a directory
     if (directory_exists(hunt_dir_path)) {
       if (!count) {
-	printf("The following hunts are available:\n");
+        printf("The following hunts are available:\n");
       }
       count++;
       printf("- Hunt %d: %s\n", count, entry->d_name);
